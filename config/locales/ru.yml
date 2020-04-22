@@ -15,3 +15,7 @@ ru:
         '%{action} статью'
       create: 'Создать'
       update: 'Изменить'
+
+  tags:
+    show:
+      empty: 'Статей нет'
