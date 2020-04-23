@@ -19,3 +19,7 @@ ru:
   tags:
     show:
       empty: 'Статей нет'
+
+  will_paginate:
+    previous_label: '&larr; туда'
+    next_label: 'сюда &rarr;'
