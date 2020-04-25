@@ -9,10 +9,13 @@ ru:
         summary: 'Краткое содержание'
         body: 'Содержание'
         category_id: 'Категория'
+        category: 'Категория'
         all_tags: 'Теги'
       category:
         name: 'Название категории'
         parent_id: 'Категория родитель'
+        category: 'Категория'
     errors:
       messages:
         blank: 'не может быть пустым'
+        required: 'обязательно для заполнения'

@@ -11,10 +11,12 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
+    @categories = Category.order(:name)
   end
 
   def create
     @category = Category.new(category_params)
+    @categories = Category.order(:name)
     if @category.save
       redirect_to categories_path, success: 'Категория успешно добавлена'
     else
@@ -24,9 +26,11 @@ class CategoriesController < ApplicationController
   end
 
   def edit
+    @categories = Category.where("id != #{@category.id}").order(:name)
   end
 
   def update
+    @categories = Category.where("id != #{@category.id}").order(:name)
     if @category.update(category_params)
       redirect_to categories_path, success: 'Категория успешно обновлена'
     else
