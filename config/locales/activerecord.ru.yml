@@ -8,6 +8,7 @@ ru:
         title: 'Название'
         summary: 'Краткое содержание'
         body: 'Содержание'
+        category_id: 'Категория'
         all_tags: 'Теги'
       category:
         name: 'Название категории'
