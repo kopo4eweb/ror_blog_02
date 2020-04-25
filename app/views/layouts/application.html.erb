@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RorBlog02</title>
+    <title><%= t('site.name') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Blog</a>
+        <a class="navbar-brand" href="/"><%= t('site.name') %></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item <%= "active" if current_page?(posts_path) %>">
-              <a class="nav-link" href="<%= posts_path %>">Статьи</a>
+              <a class="nav-link" href="<%= posts_path %>"><%= t('main_nav.page_posts') %></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="№">Контаты</a>
+              <a class="nav-link" href="№"><%= t('main_nav.page_contact') %></a>
             </li>
           </ul>
-          <%= link_to 'Новая статья', new_post_path, class: 'btn btn-outline-primary pull-xs-right' %>
+          <%= link_to t('main_nav.new_post'), new_post_path, class: 'btn btn-outline-primary pull-xs-right' %>
         </div>
       </nav>
     </div>
@@ -49,7 +49,7 @@
         <div class="col-md-3">
           <%= render 'shared/submenu' %>
           <div class="tag_cloud">
-            <h2>Теги</h2>
+            <h2><%= t('sidebar.tags') %></h2>
             <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
               <%= link_to tag.name, tag_path(tag.name), class: css_class %>
             <% end %>

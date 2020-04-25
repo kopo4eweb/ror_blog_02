@@ -16,9 +16,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to @post, success: 'Статья успешно добавлена'
+      redirect_to @post, success: t('posts.controller.create.success')
     else
-      flash.now[:danger] = 'Статья не создана'
+      flash.now[:danger] = t('posts.controller.create.danger')
       render :new
     end
   end
@@ -28,16 +28,16 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to @post, success: 'Статья успешно обновлена'
+      redirect_to @post, success: t('posts.controller.update.success')
     else
-      flash.now[:danger] = 'Статья не обновлена'
+      flash.now[:danger] = t('posts.controller.update.danger')
       render :edit
     end
   end
 
   def destroy
     @post.destroy
-    redirect_to posts_path, success: 'Статья успешно удалена'
+    redirect_to posts_path, success: t('posts.controller.destroy.success')
   end
 
   private

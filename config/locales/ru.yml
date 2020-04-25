@@ -1,7 +1,19 @@
 ru:
+  site:
+    name: 'Blog'
+
   common:
     errors: 'При заполнении формы возникли ошибки'
     back: 'Назад'
+
+  main_nav:
+    new_post: 'Новая статья'
+    page_posts: 'Статьи'
+    page_contact: 'Контакты'
+
+  sidebar:
+    categories: 'Категории'
+    tags: 'Теги'
 
   posts:
     index:
@@ -15,6 +27,21 @@ ru:
         '%{action} статью'
       create: 'Создать'
       update: 'Изменить'
+    post:
+      edit: 'Изменить'
+      destroy: 'Удалить'
+      confirm: 'Вы уверены?'
+    delimeter:
+      pages: 'Станица '
+    controller:
+      create:
+        success: 'Статья успешно добавлена'
+        danger: 'Статья не создана'
+      update:
+        success: 'Статья успешно обновлена'
+        danger: 'Статья не обновлена'
+      destroy:
+        success: 'Статья успешно удалена'
 
   tags:
     show:
@@ -43,3 +70,12 @@ ru:
         '%{action} категорию'
       create: 'Создать'
       update: 'Изменить'
+    controller:
+      create:
+        success: 'Категория успешно добавлена'
+        danger: 'Категория не создана'
+      update:
+        success: 'Категория успешно обновлена'
+        danger: 'Категория не обновлена'
+      destroy:
+        success: 'Категория успешно удалена'
