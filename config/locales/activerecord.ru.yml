@@ -2,12 +2,15 @@ ru:
   activerecord:
     models:
       post: 'Статья'
+      category: 'Категория'
     attributes:
       post:
         title: 'Название'
         summary: 'Краткое содержание'
         body: 'Содержание'
         all_tags: 'Теги'
+      category:
+        name: 'Название категории'
     errors:
       messages:
         blank: 'не может быть пустым'

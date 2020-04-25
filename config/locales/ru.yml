@@ -23,3 +23,22 @@ ru:
   will_paginate:
     previous_label: '&larr; туда'
     next_label: 'сюда &rarr;'
+
+  categories:
+    index:
+      title: 'Категории'
+      link_new: 'Новая категория'
+      table:
+        name: 'Название'
+        edit: 'Изменить'
+        destroy: 'Удалить'
+        confirm: 'Вы уверены?'
+    new:
+      title: 'Новая категория'
+    edit:
+      title: 'Редактирование категории'
+    form:
+      submit:
+        '%{action} категорию'
+      create: 'Создать'
+      update: 'Изменить'
