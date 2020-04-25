@@ -12,6 +12,7 @@ ru:
         all_tags: 'Теги'
       category:
         name: 'Название категории'
+        parent_id: 'Категория родитель'
     errors:
       messages:
         blank: 'не может быть пустым'

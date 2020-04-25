@@ -30,6 +30,7 @@ ru:
       link_new: 'Новая категория'
       table:
         name: 'Название'
+        parent: 'Родитель'
         edit: 'Изменить'
         destroy: 'Удалить'
         confirm: 'Вы уверены?'
