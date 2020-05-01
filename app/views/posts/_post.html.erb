@@ -6,10 +6,12 @@
       |
       <%= link_to post.category.name, post.category %>
     <% end %>
-    |
-    <%= link_to t('.edit'), edit_post_path(post) %>
-    |
-    <%= link_to t('.destroy'), post_path(post), method: :delete, data: { confirm: t('.confirm') } %>
+    <% if user_signed_in? %>
+      |
+      <%= link_to t('.edit'), edit_post_path(post) %>
+      |
+      <%= link_to t('.destroy'), post_path(post), method: :delete, data: { confirm: t('.confirm') } %>
+    <% end %>
   </section>
   <section class="post-summary clearfix">
     <%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image? %>
