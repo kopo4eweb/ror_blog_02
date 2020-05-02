@@ -1,6 +1,6 @@
 <h1><%= t('.title') %></h1>
 <div class="buttons_panel">
-  <%= link_to t('.link_new'), new_category_path, class: 'btn btn-outline-primary btn-sm' %>
+  <%= link_to t('.link_new'), new_admin_category_path, class: 'btn btn-outline-primary btn-sm' %>
 </div>
 
 <section id="categories">
@@ -20,8 +20,8 @@
         <td><%= category.name %></td>
         <td><%= category.parent.name if category.parent.present? %></td>
         <td>
-          <%= link_to t('.table.edit'), edit_category_path(category), class: 'btn btn-outline-primary btn-sm' %>
-          <%= link_to t('.table.destroy'), category_path(category), method: :delete, data: { confirm: t('.table.confirm')}, class: 'btn btn-outline-danger btn-sm' %>
+          <%= link_to t('.table.edit'), edit_admin_category_path(category), class: 'btn btn-outline-primary btn-sm' %>
+          <%= link_to t('.table.destroy'), admin_category_path(category), method: :delete, data: { confirm: t('.table.confirm')}, class: 'btn btn-outline-danger btn-sm' %>
         </td>
       </tr>
     <% end %>

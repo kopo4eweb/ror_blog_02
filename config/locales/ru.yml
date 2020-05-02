@@ -51,25 +51,27 @@ ru:
     previous_label: '&larr; туда'
     next_label: 'сюда &rarr;'
 
+  admin:
+    categories:
+      index:
+        title: 'Категории'
+        link_new: 'Новая категория'
+        table:
+          name: 'Название'
+          parent: 'Родитель'
+          edit: 'Изменить'
+          destroy: 'Удалить'
+          confirm: 'Вы уверены?'
+      new:
+        title: 'Новая категория'
+      edit:
+        title: 'Редактирование категории'
+      form:
+        submit:
+          '%{action} категорию'
+        create: 'Создать'
+        update: 'Изменить'
   categories:
-    index:
-      title: 'Категории'
-      link_new: 'Новая категория'
-      table:
-        name: 'Название'
-        parent: 'Родитель'
-        edit: 'Изменить'
-        destroy: 'Удалить'
-        confirm: 'Вы уверены?'
-    new:
-      title: 'Новая категория'
-    edit:
-      title: 'Редактирование категории'
-    form:
-      submit:
-        '%{action} категорию'
-      create: 'Создать'
-      update: 'Изменить'
     controller:
       create:
         success: 'Категория успешно добавлена'
