@@ -1,6 +1,7 @@
 ru:
   site:
     name: 'Blog'
+    admin: 'Админ Панель'
 
   common:
     errors: 'При заполнении формы возникли ошибки'
