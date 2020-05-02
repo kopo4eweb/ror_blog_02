@@ -18,21 +18,12 @@ ru:
   posts:
     index:
       title: 'Статьи'
-    new:
-      title: 'Новая статья'
-    edit:
-      title: 'Редактирование статьи'
-    form:
-      submit:
-        '%{action} статью'
-      create: 'Создать'
-      update: 'Изменить'
     post:
       edit: 'Изменить'
       destroy: 'Удалить'
       confirm: 'Вы уверены?'
-    delimeter:
-      pages: 'Станица '
+      delimeter:
+        pages: 'Станица '
     controller:
       create:
         success: 'Статья успешно добавлена'
@@ -52,6 +43,17 @@ ru:
     next_label: 'сюда &rarr;'
 
   admin:
+    posts:
+      new:
+        title: 'Новая статья'
+      edit:
+        title: 'Редактирование статьи'
+      form:
+        submit:
+          '%{action} статью'
+        create: 'Создать'
+        update: 'Изменить'
+
     categories:
       index:
         title: 'Категории'
