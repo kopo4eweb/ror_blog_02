@@ -17,7 +17,7 @@ $ ->
     form.append 'Content-Type', file.type
     form.append 'picture[image]', file
     xhr = new XMLHttpRequest
-    xhr.open 'POST', '/pictures', true
+    xhr.open 'POST', '/admin/pictures', true
     xhr.setRequestHeader("X-CSRF-Token", token);
 
     xhr.upload.onprogress = (event) ->
@@ -38,7 +38,7 @@ $ ->
     token = getTocken()
     $.ajax
       method: 'DELETE'
-      url: '/pictures/' + n.attachment.attributes.values.picture_id
+      url: '/admin/pictures/' + n.attachment.attributes.values.picture_id
       headers: {"X-CSRF-Token": token}
       cache: false
       contentType: false
