@@ -1,6 +1,5 @@
-class Admin::CategoriesController < ApplicationController
+class Admin::CategoriesController < Admin::AdminController
 
-  before_action :authenticate_user!
   before_action :set_category, only: [:edit, :update, :destroy]
 
   def index
